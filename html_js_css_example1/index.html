@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Planet of Luna</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_video_background.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    </head>
+
+    <body>
+        <header>
+            <h2 class="logo">Planet of Luna</h2>
+            <nav class="navigation">
+                <a href="#">主页</a>
+                <a href="#">关于</a>
+                <a href="#">服务</a>    
+                <a href="#">联系我</a>
+                <button class="btnLogin-popup">Login</button>   
+            </nav>
+        </header>
+        <div class="video-background">
+            <div class="video-foreground">
+            <div class="_16-9-desktop_9-16-mobile">
+            <!-- <iframe id="topHeroVideo" src="./2043696631.mp4" frameborder="0" allow="autoplay" data-ready="true"></iframe> -->
+            <iframe id="topHeroVideo" src="https://player.vimeo.com/video/461295222?background=1" width="640" height="360" frameborder="0" allow="autoplay" data-ready="true"></iframe>
+            </div>
+            </div>
+            <div class="fade"></div>
+            </div>
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box login">
+                <h2>登录</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="text" required> 
+                        <label>邮箱</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed">
+                            </ion-icon>
+                        </span>
+                        <input type="password" required> 
+                        <label>密码</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label >
+                            <input type="checkbox">
+                            记住我
+                        </label>
+                        <a href="#">忘记密码？</a>
+                    </div>
+                    <button type="submit" class="btn">登录</button>
+                    <div class="login-register">
+                        <p>没有账号？<a href="#" class="register-link">注册</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register" >
+                <h2>注册</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <input type="text" required> 
+                        <label>用户名</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="text" required> 
+                        <label>邮箱</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" required> 
+                        <label>验证码</label>
+                        
+                        <!-- <button class="send-verify-code">发送</button> -->
+                    </div>
+                    <div class="remember-forgot">
+                    <label >
+                        <input type="checkbox">
+                        我同意&nbsp;<a href="#" style="font-weight: 600;">隐私政策</a>
+                        </a>和&nbsp;<a href="#" style="font-weight: 600;">条款</a>
+                    </label>
+                    </div>
+                    <button type="submit" class="btn">注册</button>
+                    <div class="login-register">
+                        <p>已有帐号？<a href="#" class="login-link">登录</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

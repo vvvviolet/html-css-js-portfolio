@@ -1,0 +1,97 @@
+
+.video-background {
+    background: 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden
+}
+
+._16-9 {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative
+}
+
+._16-9-desktop_9-16-mobile {
+    width: 178%;
+    height: 0%;
+    padding-bottom: 100%;
+    position: relative
+}
+
+@media(min-aspect-ratio: 3/4) {
+    ._16-9-desktop_9-16-mobile {
+        width:242%;
+        padding-bottom: 136.13%;
+        position: relative
+    }
+}
+
+@media(min-aspect-ratio: 1/1) {
+    ._16-9-desktop_9-16-mobile {
+        width:181%;
+        padding-bottom: 101.81%;
+        position: relative
+    }
+}
+
+@media(min-aspect-ratio: 4/3) {
+    ._16-9-desktop_9-16-mobile {
+        width:135%;
+        padding-bottom: 75.94%;
+        position: relative
+    }
+}
+
+@media(min-aspect-ratio: 16/9) {
+    ._16-9-desktop_9-16-mobile {
+        width:100%;
+        padding-bottom: 56.5%
+    }
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none
+}
+
+.video-foreground {
+    position: absolute;
+    width: 178%;
+    height: 100%;
+    left: -100%;
+    bottom: 0
+}
+
+@media(min-aspect-ratio: 3/4) {
+    .video-foreground {
+        width:100%;
+        height: auto;
+        left: -10%;
+        bottom: 0
+    }
+}
+
+@media(min-aspect-ratio: 16/9) {
+    .video-foreground {
+        width:100%;
+        height: auto;
+        left: 0%;
+        top: 0
+    }
+}
+
+.top-hero .video-background iframe {
+    background-image: url(/assets/images/poster.jpg);
+    background-position: center;
+    background-size: cover
+}
