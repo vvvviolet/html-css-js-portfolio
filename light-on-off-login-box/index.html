@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.5"/>
         <title>light login box</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="style_video_background.css">
@@ -12,9 +12,9 @@
 
     <body>
     <div class="wrapper">
-       <div class="login-box">
+       <div class="form-wrapper login">
         <form action="">
-            <p class="site-logo"><img class="site-logo dark" src="./logo_b.png" height="32px" width="32px"></p>
+            <p class="site-logo"><img class="site-logo dark" src="./logo_w.png" height="32px" width="32px"></p>
             <span><h2 >Login</h2></span>
             <div class="input-box">
                 <span class="icon">
@@ -38,10 +38,52 @@
             <button type="submit">Login</button>
             </div>
             <div class="register-link">
-                <p>Don't have an account? <a href="#">Register</a></p>
+                <p>Don't have an account? <a href="#" class="register-btn-link">Register</a></p>
             </div>
 
         </form>
+        </div>
+        <div class="form-wrapper register">
+            <form action="">
+                <p class="site-logo-register"><img class="site-logo dark" src="./logo_w.png" height="32px" width="32px"></p>
+                <span><h2 >Register</h2></span>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                </div>
+                <div style="display: flex;">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="code"></ion-icon></span>
+                        <input type="code" required>
+                        <label>Verify</label>
+                        
+                </div>
+                <!-- <div class="send-verify-btn">
+                <button type="submit">send</button>
+                </div> -->
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">I agree to the<a href="#">&nbsp;terms</a>
+                    & <a href="#">conditions</a> </label>
+                </div>
+                <div class="login-btn"> 
+                <button type="submit">Register</button>
+                </div>
+                
+                <div class="register-link">
+                    <p>Already have an account? <a class="login-btn-link" href="#">Login</a></p>
+                </div>
+    
+            </form>
         </div>
     </div>
     </body>
