@@ -106,6 +106,16 @@ body {
         transform: translateX(0%);
     }
 }
+@keyframes moveInBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
 
 .btn:link,
 .btn:visited {
@@ -136,7 +146,6 @@ body {
     left: 0;
     z-index: -1;
     transition: all .3s;
-
 }
 .btn-white::after{
     background-color: white;
@@ -154,4 +163,9 @@ body {
 .btn-white{
     background-color: #fff;
     color:#668;
+}
+
+.btn-start-animated{
+    animation: moveInBottom .3s ease-in-out .5s  ;
+    animation-fill-mode: backwards;
 }
