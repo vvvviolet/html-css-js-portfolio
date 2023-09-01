@@ -1,0 +1,157 @@
+/* 
+COLORS:
+
+Light blue : #11ffff rgba(17,255,255)
+Medium blue: #1199ff rgba(17,153,255)
+Dark blue  : #0044ff rgba(0,68,255)
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #888;
+    /* padding: 30px; */
+}
+
+.header{
+    height: 95vh;
+    background-image: 
+    /* linear-gradient(to right bottom,rgba(17,255,255,.6),rgba(0,68,255,.6)) , */
+      url(../img/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* 现代css特性 */
+    /* clip-path: polygon(0 0,100% 0,100% 80%,0 100%); */
+}
+
+.logo-box{
+    position: absolute;
+    top:40px;
+    left:40px;
+}
+
+.logo{
+    height: 11px;
+
+}
+
+.heading-primary{
+    color:#fff;
+    text-transform: uppercase;
+    margin-bottom:55px ;
+}
+
+.heading-primary-main{
+    display: block;
+    font-size: 60px;
+    letter-spacing: 10px;
+    font-weight: 600;
+    animation: moveInLeft 1s ease-out;
+}
+
+.heading-primary-sub{
+    display: block;
+    font-size: 30px;
+    letter-spacing: 29px;
+    font-weight: 300;
+    animation: moveInRight 1s ease-out;
+}
+.heading-text-box{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    /* background-color: rebeccapurple; */
+    transform: translate(-50%,-129%);
+    text-align: center;
+
+}
+
+@keyframes moveInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    80%{
+        transform: translateX(10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes moveInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    80%{
+        transform: translateX(-10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 70px;
+    display: inline-block;
+    border-radius: 2px;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.btn:hover{
+    transform: translateY(-3%);
+    box-shadow: 0 10px 30px rgba(255,255,255,0.5);
+}
+
+/* after被视为btn的子元素 */
+.btn::after{
+    /* 指定才能显示 */
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .3s;
+
+}
+.btn-white::after{
+    background-color: white;
+}
+
+.btn:active{
+    transform: translateY(1%);
+    box-shadow: 0 1px 20px rgba(255,255,255,0.5);
+}
+.btn:hover::after{
+    transform: scaleX(2) scaleY(1.4);
+    opacity: 0;
+}
+
+.btn-white{
+    background-color: #fff;
+    color:#668;
+}
