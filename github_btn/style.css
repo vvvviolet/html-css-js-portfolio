@@ -1,0 +1,62 @@
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.Button--gradient {
+    position: relative;
+    /* background-clip: padding-box; */
+    /* border: 3px solid transparent; */
+    box-shadow: none;
+    border-radius: 2px;
+    display: block;
+    width: 50px;
+    height:15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:#fff;
+    font-size: 8px;
+    background: #000;
+}
+
+.Button--gradient::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    z-index: -1;
+    width: 52px;
+    height:17px;
+    border-radius: 2px;
+    background: linear-gradient(166deg,#ff507a,#7d51df 33%,#2265de 66%,#0bc786);
+
+}
+.Button--gradient::after:hover {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    z-index: -1;
+    width: 52px;
+    height:17px;
+    border-radius: 2px;
+    background: #fff
+}
+.Button--gradient::after:active {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    z-index: -1;
+    width: 52px;
+    height:17px;
+    border-radius: 2px;
+    background: #fff
+}
+
+.Button--gradient:hover {
+    /* transform:  scale(3); */
+}
